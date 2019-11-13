@@ -16,7 +16,7 @@ def Main():
     makeProj(path, args.proj_name)
 
     # Creating Git Repo
-    my_repo = Git_Repo('agrawalsourabh', 'Sourabh@12345@', args.proj_name)
+    my_repo = Git_Repo('username', 'pwd', args.proj_name)
 
 
 # ---------- Creating Project Directory ---------------------

@@ -25,7 +25,7 @@ class Git_Repo(object):
         self.setup()
 
     def setup(self):
-        driver = webdriver.Chrome('/home/shivam/Downloads/chromedriver')
+        driver = webdriver.Chrome('/~/Downloads/chromedriver')
         driver.get('https://github.com/login')
         self.login(driver, self.username, self.password, self.repo_name)
 
@@ -66,7 +66,7 @@ class Git_Repo(object):
         sub_btn = driver.find_element_by_css_selector('button.first-in-line')
         sub_btn.submit()
 
-        exp_url = "https://github.com/agrawalsourabh/" + repo_name
+        exp_url = "https://github.com/username/" + repo_name
 
         if exp_url == driver.current_url:
             print("Repo created successfully")
