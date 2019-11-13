@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function create(){
-	echo "Creating..."
+	echo "Building Project..."
 
 	# contains current working directory
 	pwd=$(pwd)
